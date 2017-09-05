@@ -1,0 +1,13 @@
+<test page>
+
+|Import                         |
+|smartrics.rest.fitnesse.fixture|
+
+|Table: Rest Fixture Config          |
+|http.client.connection.timeout|10000|
+
+!2 Testing the hello api
+
+|Table: Rest Fixture|http://localhost:8080/                           |
+|setHeaders         |fooheader: barvalue                              |
+|GET                |/greeting|200||jsonbody.content=='Hello, World!'|

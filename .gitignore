@@ -1,0 +1,15 @@
+# ignore mvn and intellij files/directories
+
+.idea/
+*.iml
+target/
+.classpath
+.settings/
+.DS_Store/
+*.log
+*.swp
+
+# ignore fitnesse dirs
+
+**/FitNesseRoot/files/testResults/
+**/FitNesseRoot/RecentChanges/
